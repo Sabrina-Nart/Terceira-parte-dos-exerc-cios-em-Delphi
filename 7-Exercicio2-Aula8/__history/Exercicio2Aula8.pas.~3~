@@ -1,0 +1,76 @@
+unit Exercicio2Aula8;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TEx2Aula8CheckBox = class(TForm)
+    lblNome: TLabel;
+    edtNome: TEdit;
+    cbMaiusculas: TCheckBox;
+    cbLimparDireita: TCheckBox;
+    cbLimparEsquerda: TCheckBox;
+    btnMostrar: TButton;
+    procedure btnMostrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Ex2Aula8CheckBox: TEx2Aula8CheckBox;
+
+implementation
+
+{$R *.dfm}
+
+procedure TEx2Aula8CheckBox.btnMostrarClick(Sender: TObject);
+   //Labeledit1 - EditLabel em vermelho nas propriedades para mudar o nome do label= um label e um edit juntos
+Var
+  Nome: string;   //Ctrl
+
+begin
+   Nome:=edtNome.Text;
+
+   if edtNome then
+      Begin
+         Nome:=Uppercase ( Nome );
+         ShowMessage ( nome );
+      End
+   else
+
+
+end;
+
+end.
+
+{var
+  nome:string;
+
+begin
+  Nome:=edtNome.text;
+
+   if cbNomes.ItemIndex=0 then
+     Begin
+       Nome:=UpperCase ( Nome );
+       ShowMessage (Nome);
+
+     End
+   else
+      if cbNomes.ItemIndex=1 then
+        Begin
+           Nome[1]:=LowerCase ( Nome [1]);
+           ShowMessage (Nome);
+
+        end
+      else
+         Begin //transformar a primeira letra - Ex 1 da apostila
+            Nome[1]:=LowerCase ( Nome );
+            Nome[1]:=UpperCase ( Nome [1]);
+            ShowMessage (Nome);
+
+         End;

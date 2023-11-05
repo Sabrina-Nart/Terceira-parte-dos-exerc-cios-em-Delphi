@@ -1,0 +1,66 @@
+object Ex2Aula8CheckBox: TEx2Aula8CheckBox
+  Left = 0
+  Top = 0
+  Caption = 'Ex2Aula8CheckBox'
+  ClientHeight = 283
+  ClientWidth = 464
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblNome: TLabel
+    Left = 32
+    Top = 16
+    Width = 31
+    Height = 13
+    Caption = 'Nome:'
+  end
+  object edtNome: TEdit
+    Left = 32
+    Top = 48
+    Width = 393
+    Height = 21
+    TabOrder = 0
+  end
+  object cbMaiusculas: TCheckBox
+    Left = 32
+    Top = 96
+    Width = 169
+    Height = 17
+    Caption = 'Mai'#250'sculas'
+    Enabled = False
+    TabOrder = 1
+  end
+  object cbLimparDireita: TCheckBox
+    Left = 32
+    Top = 136
+    Width = 169
+    Height = 17
+    Caption = 'Limpar os espa'#231'os '#224' direita'
+    Enabled = False
+    TabOrder = 2
+  end
+  object cbLimparEsquerda: TCheckBox
+    Left = 32
+    Top = 176
+    Width = 169
+    Height = 17
+    Caption = 'Limpar os espa'#231'os '#224' esquerda'
+    Enabled = False
+    TabOrder = 3
+  end
+  object btnMostrar: TButton
+    Left = 32
+    Top = 216
+    Width = 73
+    Height = 33
+    Caption = 'Mostrar'
+    TabOrder = 4
+    OnClick = btnMostrarClick
+  end
+end

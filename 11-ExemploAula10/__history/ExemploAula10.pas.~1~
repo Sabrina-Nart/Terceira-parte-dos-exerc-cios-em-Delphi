@@ -1,0 +1,38 @@
+unit ExemploAula10;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TExRadioButon = class(TForm)
+    rbOpcao1: TRadioButton;
+    rbOpcao2: TRadioButton;
+    btnTeste: TButton;
+    procedure btnTesteClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ExRadioButon: TExRadioButon;
+
+implementation
+
+{$R *.dfm}
+
+procedure TExRadioButon.btnTesteClick(Sender: TObject); //Testar os Radio button
+
+begin
+    if rbOpcao1.Checked then //Testa cada u para ver se está selecionado
+       ShowMessage ('Botão 1 selecionado')
+    else
+       if rbOpcao2.Checked then
+          ShowMessage ('Botão 2 selecionado');
+end;
+
+end.

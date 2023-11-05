@@ -1,0 +1,52 @@
+object flmMedia: TflmMedia
+  Left = 0
+  Top = 0
+  Caption = 'flmMedia'
+  ClientHeight = 264
+  ClientWidth = 518
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 80
+    Top = 152
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object edtNota1: TLabeledEdit
+    Left = 40
+    Top = 40
+    Width = 121
+    Height = 21
+    EditLabel.Width = 45
+    EditLabel.Height = 13
+    EditLabel.Caption = 'edtNota1'
+    TabOrder = 0
+  end
+  object edtNota2: TLabeledEdit
+    Left = 40
+    Top = 104
+    Width = 121
+    Height = 21
+    EditLabel.Width = 45
+    EditLabel.Height = 13
+    EditLabel.Caption = 'edtNota2'
+    TabOrder = 1
+  end
+  object btnMedia: TButton
+    Left = 40
+    Top = 147
+    Width = 75
+    Height = 25
+    Caption = 'Media'
+    TabOrder = 2
+    OnClick = btnMediaClick
+  end
+end
